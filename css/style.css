@@ -1,8 +1,249 @@
 @font-face {
-    font-family: 'Museo';
-    src: url(../assets/fonts/museo/museo-300-webfont.woff) format("woff");
+  font-family: 'blanch';
+  src: url('BLANCH_CONDENSED_LIGHT.ttf')  format('truetype');
+
+  font-family: 'museo';
+  src: url('museo-500-webfont.woff') format('woff');
 }
 
-body {
-    font-family: "Museo", sans-serif;
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: url('../assets/textures/fabric_plaid.png');
+  padding: 10px 30px;
+}
+
+#left {
+	display: flex;
+	align-items: center;
+	
+}
+
+div#left a {
+	margin: 5px;
+  margin-left: 50px;
+  color: rgb(105,105,105);
+  font-family: 'museo', Fallback, sans-serif;
+}
+
+#right {
+	
+}
+
+div#right a{
+  margin: 0 2px;
+  color: grey;
+}
+
+.social { 
+  padding: 0px 3px;
+	width: 20px;
+	border-radius: 5px;
+  
+}
+
+#right div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3px 0px;
+}
+
+#slider{
+  position: relative;
+  background: url('../assets/textures/fabric_plaid.png');
+  
+}
+
+.arrows{
+  width: 40px;
+	border-radius: 5px;
+}
+
+#leftarrow{
+  position: absolute;
+  top: 200px;
+}
+
+.img{
+  width: 95%;
+  height: 400px; 
+  border: 10px solid white;
+}
+
+#img{
+   display: flex;
+   justify-content: center;
+  
+}
+
+#rightarrow{
+  position: absolute;
+  top: 200px;
+  right: 0px;
+}
+
+#text{
+  background: url('../assets/textures/fabric_plaid.png');
+  display: flex;
+  justify-content: center;
+  color: rgb(105,105,105);
+  font-family: 'blanch', Fallback, sans-serif;
+  font-size: 18px;
+}
+
+#gallery {
+  background: url('../assets/textures/fabric_plaid.png');
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+ 
+}
+
+#gallery img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+#view{
+  display: flex;
+  justify-content: center;
+  	background: url('../assets/textures/fabric_plaid.png');
+  padding: 20px 30px;
+}
+
+.button {
+	text-decoration: none;
+	color: #fff;
+	background: url('../assets/textures/az_subtle.png');
+	background-color: #a6a69d;
+	background-blend-mode: multiply;
+	padding: 10px 50px;
+	
+}
+
+#greybar{
+  background: rgb(105,105,105);
+  height: 50px;
+  border: 5px outset grey;
+  
+}
+
+#greybar div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1px 1px;
+  
+}
+
+#greybar h4{
+  margin: 10px;
+}
+
+footer{
+  background: url('../assets/textures/az_subtle.png');
+  background-color: #a6a69d;
+	background-blend-mode: multiply;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  
+}
+
+#lefty{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 32%;
+}
+
+#lefty h5{
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+#lefty h6{
+  margin-bottom: 15px;
+  color: white;
+}
+
+#banner{
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#lefty img{
+  width: 20%;
+  padding: 0px 3px;
+}
+
+#banner a{
+  color: rgb(105,105,105);
+  padding: 0px 2px;
+  margin-left: 5px;
+}
+
+#middle{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 32%;
+  
+}
+
+#middle p{
+  margin: 0px;
+  padding: 0px 15px 0px 0px;
+}
+
+#righty{
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+
+#subgallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+
+#subgallery img {
+  width: 80px;
+  height: 65px;
+  margin: 2px;
+}
+
+@media (max-width: 800px){
+  #righty{
+    display: none;
+  }
+  #lefty{
+    width: 48%;
+  }
+  #middle{
+    width: 48%
+  }
+  #gallery img{
+    width: 200px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1140px){
+  #subgallery img{
+    width: 65px;
+    height: 45px;
+  }
 }
